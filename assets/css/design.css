@@ -2,14 +2,17 @@
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    width: 12vh;
+    width: 10vw;
+    cursor: pointer;
     
 }
 
 .header_links{
     display: flex;
     justify-content: space-between;
-    width: 88vh;
+    width: 43vw;
+    padding: 10px;
+    margin: 2px;
 }
 
 .header_links a{
@@ -21,10 +24,6 @@
     border: 40px;
     
 }
-
-@import url(https://fonts.googleapis.com/css?family=Open+Sans);
-
-
 
 .search {
   width: 100%;
@@ -41,6 +40,7 @@
   border-radius: 5px 0 0 5px;
   outline: none;
   color: #9DBFAF;
+  cursor: pointer;
 }
 
 .searchTerm:focus{
@@ -60,6 +60,6 @@
 }
 
 .header_busca{
-  width: 30%;
+  width: 40%;
   
 }

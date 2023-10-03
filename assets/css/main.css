@@ -2,6 +2,10 @@
     margin: 0;
 }
 
+body {
+    font-family: 'Roboto', sans-serif;
+}
+
 .header_section {
     margin: 0 auto;
     display: flex;
@@ -12,6 +16,7 @@
     color: aliceblue;
     justify-content: center;
     align-items: center;
+    font-size: 25px;
 }
 
 .menu_one {
@@ -20,9 +25,10 @@
     flex-direction: row;
     padding: 12px 0px 5px;
     /* justify-content: center; */
-    width: 840px;
+    width: 55vw;
     /* flex-wrap: nowrap; */
     align-items: center;
+    
 }
 .menu_one {
 
