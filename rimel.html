@@ -3,8 +3,14 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="assets/css/main.css" />
-    <link rel="stylesheet" href="assets/css/design.css" />
+    <link
+      rel="stylesheet"
+      href="../Projeto - Make_Ecommerce/assets/css/main.css"
+    />
+    <link
+      rel="stylesheet"
+      href="../Projeto - Make_Ecommerce/assets/css/design.css"
+    />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -15,16 +21,28 @@
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
     />
-    <title>Rimel</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+      crossorigin="anonymous"
+    />
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+      crossorigin="anonymous"
+    ></script>
+    <title>Pinceis - Velvete Pallet</title>
   </head>
   <body>
     <header class="header_section">
       <section class="menu_one">
-        <span>
-          <a href="index.html"
-            ><img src="assets/img/logo teste.png" alt="Logo Velet Pallette"
-          /></a>
-        </span>
+        <a href="../Projeto - Make_Ecommerce/index.html">
+          <img
+            src="../Projeto - Make_Ecommerce/assets/img/logo teste.png"
+            alt=""
+          />
+        </a>
         <div class="header_busca">
           <div class="search">
             <input type="text" class="searchTerm" placeholder="Pesquisar..." />
@@ -85,12 +103,272 @@
         </div>
       </section>
       <nav class="header_links">
-        <a href="maquiagem.html">Maquiagem</a>
-        <a href="batons.html">Baton</a>
-        <a href="gloss.html">Gloss</a>
-        <a href="pincel.html">Pinceis</a>
-        <a href="rimel.html">Rimel</a>
+        <a href="./maquiagem.html">Maquiagem</a>
+        <a href="./baton.html">Batom</a>
+        <a href="./gloss.html">Skincare</a>
+        <a href="./pinceis.html">Pinceis</a>
+        <a href="./rimel.html">Rimel</a>
       </nav>
     </header>
+
+    <div class="banner">
+      <div
+        id="carouselExampleControls"
+        class="carousel slide"
+        data-ride="carousel"
+      >
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img
+              class="d-block w-100"
+              src="../Projeto - Make_Ecommerce/assets/img/banner carrousel_01.jpg"
+              alt="Primeiro Slide"
+            />
+          </div>
+          <div class="carousel-item">
+            <img
+              class="d-block w-100"
+              src="./assets/img/banner carrousel_02.jpg"
+              alt="Segundo Slide"
+            />
+          </div>
+          <div class="carousel-item">
+            <img
+              class="d-block w-100"
+              src="./assets/img/banner carrousel_03.jpg"
+              alt="Terceiro Slide"
+            />
+          </div>
+        </div>
+        <a
+          class="carousel-control-prev"
+          href="#carouselExampleControls"
+          role="button"
+          data-slide="prev"
+        >
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="sr-only">Anterior</span>
+        </a>
+        <a
+          class="carousel-control-next"
+          href="#carouselExampleControls"
+          role="button"
+          data-slide="next"
+        >
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="sr-only">Próximo</span>
+        </a>
+      </div>
+    </div>
+
+    <section>
+      <div class="mais-vendidos">
+        <h3>Realce o poder do seu olhar.</h3>
+        <p>Crie olhos cativantes e irresistíveis.</p>
+      </div>
+      <div class="produtos">
+        <div class="produto-block">
+          <img src="./assets/img/baton_liquido_eudora.jpg" alt="" />
+          <span class="produto-lançamento">Lançamento</span>
+          <span>Baton Eudora - Vermelho Special Female</span>
+          <span class="produto-preço">R$ 27,00</span>
+          <span class="produto-parcela">2x de R$ 13,50</span>
+          <div class="btn btn-three">
+            <span>COMPRAR AGORA</span>
+          </div>
+        </div>
+
+        <div class="produto-block">
+          <img src="./assets/img/baton_liquido_eudora.jpg" alt="" />
+          <span class="produto-lançamento">Lançamento</span>
+          <span>Baton Eudora - Vermelho Special Female</span>
+          <span class="produto-preço">R$ 27,00</span>
+          <span class="produto-parcela">2x de R$ 13,50</span>
+          <div class="btn btn-three">
+            <span>COMPRAR AGORA</span>
+          </div>
+        </div>
+
+        <div class="produto-block">
+          <img src="./assets/img/baton_liquido_eudora.jpg" alt="" />
+          <span class="produto-lançamento">Lançamento</span>
+          <span>Baton Eudora - Vermelho Special Female</span>
+          <span class="produto-preço">R$ 27,00</span>
+          <span class="produto-parcela">2x de R$ 13,50</span>
+          <div class="btn btn-three">
+            <span>COMPRAR AGORA</span>
+          </div>
+        </div>
+
+        <div class="produto-block">
+          <img src="./assets/img/baton_liquido_eudora.jpg" alt="" />
+          <span class="produto-lançamento">Lançamento</span>
+          <span>Baton Eudora - Vermelho Special Female</span>
+          <span class="produto-preço">R$ 27,00</span>
+          <span class="produto-parcela">2x de R$ 13,50</span>
+          <div class="btn btn-three">
+            <span>COMPRAR AGORA</span>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section>
+      <div class="produtos">
+        <div class="produto-block">
+          <img src="./assets/img/baton_liquido_eudora.jpg" alt="" />
+          <span class="produto-lançamento">Lançamento</span>
+          <span>Baton Eudora - Vermelho Special Female</span>
+          <span class="produto-preço">R$ 27,00</span>
+          <span class="produto-parcela">2x de R$ 13,50</span>
+          <div class="btn btn-three">
+            <span>COMPRAR AGORA</span>
+          </div>
+        </div>
+
+        <div class="produto-block">
+          <img src="./assets/img/baton_liquido_eudora.jpg" alt="" />
+          <span class="produto-lançamento">Lançamento</span>
+          <span>Baton Eudora - Vermelho Special Female</span>
+          <span class="produto-preço">R$ 27,00</span>
+          <span class="produto-parcela">2x de R$ 13,50</span>
+          <div class="btn btn-three">
+            <span>COMPRAR AGORA</span>
+          </div>
+        </div>
+
+        <div class="produto-block">
+          <img src="./assets/img/baton_liquido_eudora.jpg" alt="" />
+          <span class="produto-lançamento">Lançamento</span>
+          <span>Baton Eudora - Vermelho Special Female</span>
+          <span class="produto-preço">R$ 27,00</span>
+          <span class="produto-parcela">2x de R$ 13,50</span>
+          <div class="btn btn-three">
+            <span>COMPRAR AGORA</span>
+          </div>
+        </div>
+
+        <div class="produto-block">
+          <img src="./assets/img/baton_liquido_eudora.jpg" alt="" />
+          <span class="produto-lançamento">Lançamento</span>
+          <span>Baton Eudora - Vermelho Special Female</span>
+          <span class="produto-preço">R$ 27,00</span>
+          <span class="produto-parcela">2x de R$ 13,50</span>
+          <div class="btn btn-three">
+            <span>COMPRAR AGORA</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="banner-mid">
+        <img src="./assets/img/banner-mid-page.jpg" alt="" />
+      </div>
+    </section>
+
+    <footer>
+      <div class="news-letter mais-vendidos">
+        <p>Receba nossas novidades!</p>
+        <p>
+          Cadastre-se e receba descontos e brindes especiais para a primeira
+          compra, além de novidades exclusivas todos os dias.
+        </p>
+
+        <form class="formulario" action="" method="post">
+          <label for="fname">Nome:</label><br />
+          <input
+            type="text"
+            id="fname"
+            name="fname"
+            value="Digite seu nome"
+          /><br />
+          <label for="email">E-mail:</label>
+          <input type="email" id="email" name="usuario_email" />
+          <label for="telefone">Telefone</label>
+          <input
+            type="tel"
+            id="telefone"
+            class="input-padrao"
+            required
+            placeholder="(xx) xxxxx-xxxx"
+          />
+          <input type="submit" value="Cadastrar" />
+        </form>
+        <p>
+          Ao se cadastrar você irá concordar com a nossa política de
+          privacidade.
+        </p>
+      </div>
+
+      <div class="social-midia">
+        <p>Redes sociais</p>
+        <div class="icons-socials">
+          <a href="instagram.com"
+            ><img
+              class="icons-midia"
+              src="./assets/icons/icon-insta.svg"
+              alt=""
+          /></a>
+          <a href="instagram.com"
+            ><img
+              class="icons-midia"
+              src="./assets/icons/icon-youtube.svg"
+              alt=""
+          /></a>
+          <a href="instagram.com"
+            ><img
+              class="icons-midia"
+              src="./assets/icons/icon-tiktok.svg"
+              alt=""
+          /></a>
+          <a href="instagram.com"
+            ><img
+              class="icons-midia"
+              src="./assets/icons/icon-twitter.svg"
+              alt=""
+          /></a>
+        </div>
+      </div>
+    </footer>
+
+    <!--  <div class="container">
+        <div>
+          <div class="content">
+            <h2>Produtos</h2>
+            <span>Produtos</span>
+          </div>
+        </div>
+        <div>
+          <div class="content">
+            <h2>Produtos</h2>
+            <span>Produtos</span>
+          </div>
+        </div>
+        <div>
+          <div class="content">
+            <h2>Produtos</h2>
+            <span>Produtos</span>
+          </div>
+        </div>
+        <div>
+          <div class="content">
+            <h2>Produtos</h2>
+            <span>Produtos</span>
+          </div>
+        </div>
+      </div> -->
+    <script
+      src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+      integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"
+      integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"
+      integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
+      crossorigin="anonymous"
+    ></script>
   </body>
 </html>

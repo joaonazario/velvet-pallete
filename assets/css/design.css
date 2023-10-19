@@ -29,6 +29,10 @@
   display: flex;
 }
 
+.search input{
+  height: 36px;
+}
+
 .searchTerm {
   width: 100%;
   border: 3px solid #ffffff;
@@ -59,4 +63,136 @@
 
 .header_busca {
   width: 40%;
+}
+
+.banner{
+  margin: auto;
+  margin-top: 40px;
+  width: 60vw;  
+}
+
+.mais-vendidos{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 20px;
+}
+
+.produtos{
+  display: flex;
+  justify-content: center;
+}
+
+.produto-block{
+  display: flex;
+  flex-direction: column;
+  width: 12vw;
+  margin: 35px;
+  padding: 1vw;
+  border: 1px solid rgb(229,229,229);
+}
+.produto-block img{
+  width: auto;
+}
+
+.produto-block span{
+  
+}
+
+.produto-lançamento{
+  background-color: #000000;
+  color: #ffffff;
+  border-radius: 5px;
+  width: fit-content;
+  padding: 5px;
+  font-size: 12px;
+}
+
+.produto-preço{
+  font-weight: bold;
+}
+
+.produto-parcela{
+  color: darkgray;
+  font-size: 14px;
+}
+
+.banner-mid{
+  margin: auto;
+  margin-top: 40px;
+  width: 60vw;
+}
+
+.banner-mid img{
+  width: auto;
+}
+
+footer{
+  margin-top: 30px;
+}
+
+.formulario{
+  display: flex;
+    justify-content: space-between;
+    width: 43vw;
+    padding: 10px;
+    margin: 2px;
+}
+
+.news-letter{
+  background-color: rgb(246,246,246);
+}
+
+.social-midia{
+  display: flex;
+  /* width: 43vw; */
+  padding: 10px;
+  /* margin: 2px; */
+  background-color: #000000;
+  color: #ffffff;
+  flex-direction: column;
+  align-items: center;
+}
+
+.icons-midia{
+  width: 35px;
+}
+
+/* Estilização dos botoês */
+.btn-three {
+	color: #FFF;
+	transition: all 0.5s;
+	position: relative;
+}
+.btn-three::before {
+	content: '';
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	z-index: 1;
+	background-color: rgba(233, 15, 15, 0.1);
+	transition: all 0.3s;
+}
+.btn-three:hover::before {
+	opacity: 0 ;
+	transform: scale(0.5,0.5);
+}
+.btn-three::after {
+	content: '';
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	z-index: 1;
+	opacity: 0;
+	transition: all 0.3s;
+	border: 1px solid rgba(240, 15, 146, 0.5);
+	transform: scale(1.2,1.2);
+}
+.btn-three:hover::after {
+	opacity: 1;
+	transform: scale(1,1);
 }
