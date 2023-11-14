@@ -1,26 +1,28 @@
-.icons {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  width: 10vw;
-  cursor: pointer;
+.icons{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 10vw;
+    cursor: pointer;
+    
 }
 
-.header_links {
-  display: flex;
-  justify-content: space-between;
-  width: 43vw;
-  padding: 10px;
-  margin: 2px;
+.header_links{
+    display: flex;
+    justify-content: space-between;
+    width: 43vw;
+    padding: 10px;
+    margin: 2px;
 }
 
-.header_links a {
-  text-decoration: none;
-  color: aliceblue;
+.header_links a{
+    text-decoration: none;
+    color: aliceblue;        
 }
 
-.search {
-  border: 40px;
+.search{
+    border: 40px;
+    
 }
 
 .search {
@@ -41,19 +43,19 @@
   height: 20px;
   border-radius: 5px 0 0 5px;
   outline: none;
-  color: #9dbfaf;
+  color: #9DBFAF;
   cursor: pointer;
 }
 
-.searchTerm:focus {
+.searchTerm:focus{
   color: #000000;
 }
 
 .searchButton {
   width: 40px;
   height: 36px;
-  border: 1px solid #00b4cc;
-  background: #00b4cc;
+  border: 1px solid #00B4CC;
+  background: #00B4CC;
   text-align: center;
   color: #fff;
   border-radius: 0 5px 5px 0;
@@ -61,8 +63,9 @@
   font-size: 20px;
 }
 
-.header_busca {
+.header_busca{
   width: 40%;
+  
 }
 
 .banner{
@@ -79,8 +82,14 @@
 }
 
 .produtos{
+  margin: auto;
   display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
   justify-content: center;
+  box-sizing: border-box;
+  width: 70%;
+  align-items: center;
 }
 
 .produto-block{
@@ -133,10 +142,10 @@ footer{
 
 .formulario{
   display: flex;
-    justify-content: space-between;
-    width: 43vw;
-    padding: 10px;
-    margin: 2px;
+  justify-content: space-between;
+  width: auto;
+  padding: 20px;
+  margin: 2px;
 }
 
 .news-letter{
