@@ -1,0 +1,251 @@
+/**---------- VARIÁVEIS ----------*/
+:root{
+    --color-light-50: #f8fafc;
+
+    --color-dark-50: #797984;
+    --color-dark-100: #312d37;
+    --color-dark-900: #000;
+
+    --color-font: mediumblue;
+    
+    --color-background-50: #f2b9ac;
+    --color-background-100: #f28888;
+    --color-background-200: #8c4d59;
+    
+    --color-gradient: linear-gradient(90deg,var(--color-background-50), var(--color-background-100), var(--color-background-200));
+}
+/** ---------- ESTILIZAÇÃO PADRÃO ----------*/
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    font-family: 'Roboto', sans-serif;
+}
+
+#main{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    width: 100%;
+    /*background: ;*/
+}
+
+#cadastro-form {
+    background-color: var(--color-light-50);
+    display: flex;
+    flex-direction: column;
+    padding: 30px 40px;
+    margin: 30px 40px;
+    border-radius: 8px;
+    gap: 30px;
+    box-shadow: 5px 5px 8px rgba(0, 0, 0, 0.336);
+    height: fit-content
+}
+
+#form-header{
+    display: flex;
+    align-items: center;
+    font-size: 15px;
+    gap: 20px;
+    color: var(--color-dark-50)
+
+}
+.inputs {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+}
+
+.helper-text {
+    display: none;
+    font-size: .8rem;
+    color: darkred;
+}
+
+i{
+    font-size: 20px;
+    color: var(--color-dark-50);
+}
+i:hover {
+    transform: scale(1.4);
+}
+
+.input-box {
+    margin: 10px;
+}
+
+.input-box label {
+    font-size: 14px;
+    color: var(--color-dark-50);
+}
+.input-field {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    padding: 3px;
+    cursor: text;
+    border: 1px solid var(--color-dark-50);
+    border-radius: 5px;
+    height: 40px;
+}
+.input-field input{
+    border: none;
+    background-color: transparent;
+    width: 100%;
+    font-size: 18px;
+    padding: 0px 5px;
+}
+.input-field input:focus{
+    outline: none;
+}
+input:-webkit-autofill{
+    -webkit-box-shadow: 0 0 0 30px #f8fafc inset;
+}
+.data{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    gap: 40px;
+}
+.data select {
+    text-align: center;
+    border: none;
+    width: 75px;
+    height: 40px;
+    padding: 3px;
+    background-color: transparent;
+    cursor: pointer;
+    color: var(--color-dark-50)
+    
+}
+.data select:focus{
+    outline: none;
+}
+option {
+    color: var(--color-dark-50);
+}
+input::placeholder{
+    color: var(--color-dark-50);
+}
+#iano {
+    text-align: center;
+    border: none;
+    width: 75px;
+    height: 40px;
+    font-size: 14px;
+    background-color: transparent;
+    color: var(--color-dark-50);
+}
+.input-box i {
+    margin: 0px 10px;
+    font-size: 14px;
+    transform: none;
+    cursor: pointer;
+    
+}
+
+.radio {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: flex-start;
+    margin-top: 10px;
+    }
+.radio label{
+    font-size: 14px;
+}
+span {
+    display: flex;
+    align-items: center;
+    margin-bottom: 5px;
+    gap: 5px;
+}
+input[type="radio"] {
+    cursor:pointer;
+}
+.div-cadastro{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 800px;
+}
+.btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#cadastrar {
+    width: 100%;
+    margin: 40px;
+    border: none;
+    background: var(--color-gradient);
+    color: var(--color-light-50);
+    padding: 7px;
+    font-size: 18px;
+    border-radius: 3px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+#cadastrar:hover {
+    transform: scale(1.05);
+}
+.input-checkbox{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 10px;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    color: var(--color-dark-50)
+}
+
+input[type="checkbox"] {
+    height: 20px;
+    width: 25px;
+    background-color: #d5d5d5;
+    border-radius: 5px;
+    cursor: pointer;
+}
+#forma-de-pagamento{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+
+/**--------ESTILOS DINÂMICOS-------*/
+
+.required-popup::after {
+  content: "*Campo obrigatório";
+  position: relative;
+  top: 0;
+  right: 0;
+  color: #DFDFDF;
+  font-size: .65rem;
+  padding: .2rem .3rem;
+  width: auto;
+  display: block;
+  background-color: #202020;
+}
+input.error {
+  border: none;
+  color: darkred;
+  
+}
+
+input.correct {
+  color: green;
+  border: none;
+  
+}
+
+.visible {
+  display: block;
+}
