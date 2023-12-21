@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./assets/css/main.css">
+    <link rel="stylesheet" href="./assets/css/design.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+        integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="assets/css/cadastro.css">
+    <script src="./assets/js/cadastro.js" defer></script>
+    <title>Velvet Pallette:: Cadastro</title>
+</head>
+
+<body>
+    <header class="header_section">
+        <section class="menu_one">
+            <a href="./index.html">
+                <img src="./assets/img/logo teste 2.png" alt="">
+            </a>
+            <div class="header_busca">
+                <div class="search">
+                   <input type="text" class="searchTerm" placeholder="Pesquisar...">
+                   <button type="submit" class="searchButton">                    
+                     <i class="fa fa-search"></i>
+                  </button>
+                </div>
+             </div>
+            <div class="icons">
+                <div>
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="white" id="Outline" viewBox="0 0 24 24" width="26" height="26"><path d="M12,12A6,6,0,1,0,6,6,6.006,6.006,0,0,0,12,12ZM12,2A4,4,0,1,1,8,6,4,4,0,0,1,12,2Z"/><path d="M12,14a9.01,9.01,0,0,0-9,9,1,1,0,0,0,2,0,7,7,0,0,1,14,0,1,1,0,0,0,2,0A9.01,9.01,0,0,0,12,14Z"/></svg>
+                </div>
+                <div>
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="white" viewBox="0 0 24 24" width="26" height="26"><g id="_01_align_center" data-name="01 align center"><path d="M17.5.917a6.4,6.4,0,0,0-5.5,3.3A6.4,6.4,0,0,0,6.5.917,6.8,6.8,0,0,0,0,7.967c0,6.775,10.956,14.6,11.422,14.932l.578.409.578-.409C13.044,22.569,24,14.742,24,7.967A6.8,6.8,0,0,0,17.5.917ZM12,20.846c-3.253-2.43-10-8.4-10-12.879a4.8,4.8,0,0,1,4.5-5.05A4.8,4.8,0,0,1,11,7.967h2a4.8,4.8,0,0,1,4.5-5.05A4.8,4.8,0,0,1,22,7.967C22,12.448,15.253,18.416,12,20.846Z"/></g></svg>
+                </div>
+                <div>
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="white" id="Outline" viewBox="0 0 24 24" width="26" height="26"><path d="M22.713,4.077A2.993,2.993,0,0,0,20.41,3H4.242L4.2,2.649A3,3,0,0,0,1.222,0H1A1,1,0,0,0,1,2h.222a1,1,0,0,1,.993.883l1.376,11.7A5,5,0,0,0,8.557,19H19a1,1,0,0,0,0-2H8.557a3,3,0,0,1-2.82-2h11.92a5,5,0,0,0,4.921-4.113l.785-4.354A2.994,2.994,0,0,0,22.713,4.077ZM21.4,6.178l-.786,4.354A3,3,0,0,1,17.657,13H5.419L4.478,5H20.41A1,1,0,0,1,21.4,6.178Z"/><circle cx="7" cy="22" r="2"/><circle cx="17" cy="22" r="2"/></svg>
+                </div>
+            </div>
+        </section>
+        <nav class="header_links">
+            <a href="./maquiagem.html">Maquiagem</a>
+            <a href="./baton.html">Batom</a>
+            <a href="./gloss.html">Skincare</a>
+            <a href="./pinceis.html">Pinceis</a>
+            <a href="./rimel.html">Rimel</a>
+            <a href="./tutoriais.html">Tutoriais</a>
+        </nav>
+    </header>
+    <main id="main">
+        <form id="cadastro-form">
+            <div id="form-header">
+                <a href="login.html"><i id="voltar" class="fa-solid fa-chevron-left"></i></a>
+                <h1>CADASTRO</h1>
+            </div>
+            <div id="inputs">
+                <div class="input-box">
+                    <label for="name">*Nome Completo
+                        <div class="input-field">
+                            <input type="text" id="name" name="name">
+                        </div>
+                        <p id="name-helper"class="helper-text">Mensagem de ajuda</p>
+                    </label>
+                </div>
+                
+                <div class="input-box">
+                    <label for="email">*Email
+                        <div class="input-field">
+                            <input type="email" id="email" name="email">
+                        </div>
+                        <p id="email-helper"class="helper-text">Mensagem de ajuda</p>
+                    </label>
+                </div>
+                <div class="input-box">
+                    <div class="input-checkbox">
+                        <input type="checkbox" id="autoriza-email" name="autoriza-email" checked>
+                        <p>Desejo receber por e-mail novidades e promoções da Velvet Pallet
+                        </p>
+                    </div>
+                </div>
+                <div class="input-box">
+                    <label for="cpf">*CPF
+                        <div class="input-field">
+                            <input type="text" id="cpf" name="cpf">
+                        </div>
+                        <p id="cpf-helper"class="helper-text">Mensagem de ajuda</p>
+                    </label>
+                </div>
+                <div class="input-box">
+                    <label for="telefone">*Telefone
+                        <div class="input-field">
+                            <input type="tel" id="tel" name="telefone">
+                        </div>
+                    </label>
+                </div>
+                <div class="input-box">
+                    <label for="Date">Data de nascimento (opcional)</label>
+                    <div class="data">
+                        <div class="input-field">
+                            <select name="dia" id="idia">
+                                <option label="Dia" value selected></option>
+                                <option value="">01</option>
+                                <option value="">02</option>
+                                <option value="">03</option>
+                                <option value="">04</option>
+                                <option value="">05</option>
+                                <option value="">06</option>
+                                <option value="">07</option>
+                                <option value="">08</option>
+                                <option value="">09</option>
+                                <option value="">10</option>
+                                <option value="">11</option>
+                                <option value="">12</option>
+                                <option value="">13</option>
+                                <option value="">14</option>
+                                <option value="">15</option>
+                                <option value="">16</option>
+                                <option value="">17</option>
+                                <option value="">18</option>
+                                <option value="">19</option>
+                                <option value="">20</option>
+                                <option value="">21</option>
+                                <option value="">22</option>
+                                <option value="">23</option>
+                                <option value="">24</option>
+                                <option value="">25</option>
+                                <option value="">26</option>
+                                <option value="">27</option>
+                                <option value="">28</option>
+                                <option value="">29</option>
+                                <option value="">30</option>
+                                <option value="">31</option>
+                            </select>
+                        </div>
+                        <div class="input-field">
+                            <select name="mes" id="imes">
+                                <option label="Mês" value selected>MÊS</option>
+                                <option value="">Janeiro</option>
+                                <option value="">Fevereiro</option>
+                                <option value="">Março</option>
+                                <option value="">Abril</option>
+                                <option value="">Maio</option>
+                                <option value="">Junho</option>
+                                <option value="">Julho</option>
+                                <option value="">Agosto</option>
+                                <option value="">Setembro</option>
+                                <option value="">Outubro</option>
+                                <option value="">Novembro</option>
+                                <option value="">Dezembro</option>
+                            </select>
+                        </div>
+                        <div class="input-field">
+                            <input class="ano" type="text" name="ano" id="iano" placeholder="Ano" value>
+                        </div>
+                    </div>
+                </div>
+                <div class="input-box">
+                    <label for="genero">Gênero (opcional)</label><i class="fa-solid fa-circle-info"></i>
+                    <div class="radio">
+                        <span><input type="radio" name="sexo" id="mas"><label for="mas">Masculino</label></span>
+                        <span><input type="radio" name="sexo" id="fem"><label for="fem">Feminino</label></span>
+                        <span><input type="radio" name="sexo" id="no"><label for="no">Não especificar</label></span>
+                    </div>
+                </div>
+                <div class="input-box">
+                    <label for="senha">*Senha
+                        <div class="input-field">
+                            <input type="password" id="senha" name="senha">
+                        </div>
+                        <p id="senha-helper"class="helper-text">Mensagem de ajuda</p>
+                    </label>
+                </div>
+                <div class="input-box">
+                    <label for="confirmar-senha">*Confirmar Senha
+                        <div class="input-field">
+                            <input type="password" id="confirmar-senha" name="confirmar-senha">
+                        </div>
+                        <p id="confirmar-senha-helper"class="helper-text">Mensagem de ajuda</p>
+                    </label>
+                </div>
+                <div class="input-box">
+                    <div class="input-checkbox">
+                        <input type="checkbox" id="autoriza-sms" name="autoriza-sms" checked>
+                        <p>Desejo receber por SMS novidades e promoções da Velvet Pallet
+                        </p>
+                    </div>
+                </div>
+                <div class="input-box">
+                    <div class="input-checkbox">
+                        <input type="checkbox" id="maioridade" name="maioridade">
+                        <p>Confirmo ser maior de 18 anos e estou de acordo com a <a href="#">Politica de Privacidade.</a>
+                        </p>
+                    </div>
+                </div>
+                <div class="btn">
+                    <button type="submit" id="cadastrar">EFETUAR CADASTRO</button>
+                </div>
+
+            </div>
+        </form>
+    </main>
+    <footer>
+        
+  
+      <div class="social-midia">
+        <p>Redes sociais</p>
+        <div class="icons-socials">
+          <a href="instagram.com"><img class="icons-midia" src="./assets/icons/icon-insta.svg" alt=""></a>
+          <a href="youtube.com"><img class="icons-midia" src="./assets/icons/icon-youtube.svg" alt=""></a>
+          <a href="tiktok.com"><img class="icons-midia" src="./assets/icons/icon-tiktok.svg" alt=""></a>
+          <a href="twitter.com"><img class="icons-midia" src="./assets/icons/icon-twitter.svg" alt=""></a>
+        </div>
+      </div>
+  
+      <div id="forma-de-pagamento">
+          <p>Formas de forma-de-pagamento</p>
+          <img src="./assets/img/bandeiras-footer.jpg" alt="Formas de pagamento">
+          <p>Loja Segura</p>
+          <img src="./assets/img/seguro-footer.png" alt="Formas de pagamento">
+      </div>    
+  
+      </footer>
+    
+        <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+  </body>
+
+
+
+</html>

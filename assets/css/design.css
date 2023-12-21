@@ -136,6 +136,13 @@
   width: auto;
 }
 
+.banner-mid2{
+  display: flex;
+  flex-direction: column;
+  width: 60vw;
+  margin: auto;  
+}
+
 footer{
   margin-top: 30px;
 }

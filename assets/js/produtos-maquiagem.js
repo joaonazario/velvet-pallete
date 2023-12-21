@@ -4,6 +4,44 @@ let sectionNinaSecrets = document.getElementById('ninasecrets');
 //Cria o elemento div e a classe produtos EUDORA.
 let produtos = document.createElement('div');
 produtos.className = 'produtos';
+
+// Criando informaçoes dos produtos Eudora
+let imagensEudora = [
+    './assets/img-maquiagem/Blush-Iluminador-RostoCorpo-eudora.jpg',
+    './assets/img-maquiagem/mascara-Cílios-Soul-eudora.jpg',
+    './assets/img-maquiagem/acido-Hialurônico-eudora.jpg',
+    './assets/img-maquiagem/Combo-Batom-eudora.jpg',
+    
+];
+
+let productLabelEudora = [
+    'Eudora',
+    'Eudora',
+    'Eudora',
+    'Eudora',
+];
+
+let productNameEudora = [
+    'Blush Iluminador',
+    'Mascara p/ Cilios',
+    'Àcido Hiolaurico',
+    'Combo Batom',
+];
+
+let productPriceEudora = [
+    'R$67,99',
+    'R$44,99',
+    'R$54,99',
+    'R$74,97',    
+];
+
+let productPart = [
+    '4x de R$17,00',
+    '3x de R$15,00',
+    '3x de R$18.99',
+    '4x de R$18,74',
+]
+
 for (let i = 0; i < 4; i++) {
 
     //Criar o elemento div - bloco de produtos com as informaçoes - preço foto etc.
@@ -11,22 +49,22 @@ for (let i = 0; i < 4; i++) {
     produtoBlock.className = 'produto-block';
     
     let imagemProduto = document.createElement('img');
-    imagemProduto.src = './assets/img/baton_liquido_eudora.jpg';
+    imagemProduto.src = imagensEudora[i % imagensEudora.length];;
 
     let spanOne = document.createElement('span');
     spanOne.className = 'produto-lançamento';
-    spanOne.textContent = `Base Eudora`;
+    spanOne.textContent = productLabelEudora[i % productLabelEudora.length];
 
     let spanTwo = document.createElement('span');
-    spanTwo.textContent = `Base MAC - Vermelho Especial`;
+    spanTwo.textContent = productNameEudora[i % productNameEudora.length];
 
     let spanThree = document.createElement('span');
     spanThree.className = 'produto-preço';
-    spanThree.textContent = 'R$ 27,00';
+    spanThree.textContent = productPriceEudora[i % productPriceEudora.length];
 
     let spanFour = document.createElement('span');
     spanFour.className = 'produto-parcela';
-    spanFour.textContent = `2x de R$13,50`
+    spanFour.textContent = productPart[i % productPart.length];
 
     let divBotaoComprarAgora = document.createElement('span');
     divBotaoComprarAgora.className = 'btn btn-three';
@@ -45,6 +83,44 @@ for (let i = 0; i < 4; i++) {
     divBotaoComprarAgora.appendChild(spanBotaoComprarAgora);    
 }
 
+// Criando informaçoes dos produtos Mac
+let imagensMac = [
+    './assets/img-maquiagem/mini-baton-winter-mac.jpg',
+    './assets/img-maquiagem/kit-batons-mac.jpg',
+    './assets/img-maquiagem/lapis-delineador-mac.jpg',
+    './assets/img-maquiagem/mascara-de-cilios-mac.jpg',
+    
+];
+
+let productLabelMac = [
+    'Mac',
+    'Mac',
+    'Mac',
+    'Mac',
+];
+
+let productNameMac = [
+    'Mini Batom Mac Flush Winter',
+    'Mascara de Cílios Mac Lean',
+    'Lápis Deliniador Teen Plus Mac',
+    'Kit 5 Batons Mac Lux Night',
+];
+
+let productPriceMac = [
+    'R$149,00',
+    'R$269,00',
+    'R$199,00',
+    'R$449,00',    
+];
+
+let productPartMac = [
+    '7x de R$21,90',
+    '10x de R$26,90',
+    '9x de R$22,11',
+    '10x de R$44,90',
+];
+
+
 // Criando produtos MAC
 let sectionMac = document.getElementById('mac');
 
@@ -58,22 +134,22 @@ for (let i = 0; i < 4; i++) {
     produtoBlock.className = 'produto-block';
     
     let imagemProduto = document.createElement('img');
-    imagemProduto.src = './assets/img/baton_liquido_eudora.jpg';
+    imagemProduto.src = imagensMac[i % imagensMac.length];
 
     let spanOne = document.createElement('span');
     spanOne.className = 'produto-lançamento';
-    spanOne.textContent = `Base MAC`;
+    spanOne.textContent = productLabelMac[i % productLabelMac.length];
 
     let spanTwo = document.createElement('span');
-    spanTwo.textContent = `Base MAC - Vermelho Especial`;
+    spanTwo.textContent = productNameMac[i % productNameMac.length];
 
     let spanThree = document.createElement('span');
     spanThree.className = 'produto-preço';
-    spanThree.textContent = 'R$ 27,00';
+    spanThree.textContent = productPriceMac[i % productPriceMac.length];
 
     let spanFour = document.createElement('span');
     spanFour.className = 'produto-parcela';
-    spanFour.textContent = `2x de R$13,50`
+    spanFour.textContent = productPartMac[i % productPartMac.length];
 
     let divBotaoComprarAgora = document.createElement('span');
     divBotaoComprarAgora.className = 'btn btn-three';
@@ -92,6 +168,47 @@ for (let i = 0; i < 4; i++) {
     divBotaoComprarAgora.appendChild(spanBotaoComprarAgora);    
 }
 
+
+// Criando informaçoes dos produtos Mac
+let imagensAvon = [
+    './assets/img-maquiagem/avon-mascara-supershock-cilios.jpg',
+    './assets/img-maquiagem/avon-brilho-labial-rollette.jpg',
+    './assets/img-maquiagem/avon-creamy-dLicious-matte.jpg',
+    './assets/img-maquiagem/avon-brilho-labial-rollette-gloss.jpg',
+    
+];
+
+let productLabelAvon = [
+    'Avon',
+    'Avon',
+    'Avon',
+    'Avon',
+];
+
+let productNameAvon = [
+    'Máscara Para Cílios Supershock',
+    'Brilho Labial Rollete Pink',
+    'Batom Creamy DLicious Matte',
+    'Brilho Labial Rollette Gloss',
+];
+
+let productPriceAvon = [
+    'R$18,00',
+    'R$16,00',
+    'R$10,00',
+    'R$20,00',    
+];
+
+let productPartAvon = [
+    '1x de R$18,00',
+    '2x de R$8,00',
+    '2x de R$5,00',
+    '2x de R$10,00',
+];
+
+
+
+
 //Cria os produtos Avon
 let sectionAvon = document.getElementById('avon');
 
@@ -105,22 +222,22 @@ for (let i = 0; i < 4; i++) {
     produtoBlock.className = 'produto-block';
     
     let imagemProduto = document.createElement('img');
-    imagemProduto.src = './assets/img/baton_liquido_eudora.jpg';
+    imagemProduto.src = imagensAvon[i % imagensAvon.length];
 
     let spanOne = document.createElement('span');
     spanOne.className = 'produto-lançamento';
-    spanOne.textContent = `Avon`;
+    spanOne.textContent = productLabelAvon[i % productLabelAvon.length];
 
     let spanTwo = document.createElement('span');
-    spanTwo.textContent = `Iluminador`;
+    spanTwo.textContent = productNameAvon[i % productNameAvon.length];
 
     let spanThree = document.createElement('span');
     spanThree.className = 'produto-preço';
-    spanThree.textContent = 'R$ 27,00';
+    spanThree.textContent = productPriceAvon[i % productPriceAvon.length];
 
     let spanFour = document.createElement('span');
     spanFour.className = 'produto-parcela';
-    spanFour.textContent = `2x de R$10,50`
+    spanFour.textContent = productPartAvon[i % productPartAvon.length];
 
     let divBotaoComprarAgora = document.createElement('span');
     divBotaoComprarAgora.className = 'btn btn-three';

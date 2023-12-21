@@ -5,6 +5,52 @@ let i = 8;
 let produtos = document.createElement('div');
 produtos.className = 'produtos';
 
+let imagens = [
+    './assets/img/baton_liquido_eudora.jpg',
+    './assets/img-index/paleta-avon.jpg',
+    './assets/img-index/iluminador-mac-extra.jpg',
+    './assets/img-index/sabonete-liquido-quemdisse.jpg',
+    './assets/img-index/anti-oxi-quemdisse.jpg',
+    './assets/img-index/baton-eudora-glam-nude.jpg',
+    './assets/img-index/pincel-mac-fibra.jpg',
+    './assets/img-index/paleta-de-sombras-quem.jpg',
+    
+    
+];
+
+let productLabel = [
+    'Eudora',
+    'Avon',
+    'Mac',
+    'Quem disse',
+    'Quem disse',
+    'Mac',
+    'Mac',
+];
+
+let productName = [
+    'Rimel Red Eudora',
+    'Paleta Color Mac',
+    'Iluminador Mac',
+    'Sabonete Guaraná',
+    'Anti Oxidante',
+    'Batom Red Eudora',
+    'Pincel Grosso Mac',
+    'Paleta de Sombras',
+];
+
+let productPrice = [
+    'R$27,00',
+    'R$94,00',
+    'R$339,00',
+    'R$134,90',
+    'R$139,90',
+    'R$39,00',
+    'R$289,00',
+    'R$469,00',
+    
+];
+
 // Criando produtos com loop
 
 for (let i = 0; i < 8; i++) {
@@ -14,28 +60,90 @@ for (let i = 0; i < 8; i++) {
     produtoBlock.className = 'produto-block';
     
     let imagemProduto = document.createElement('img');
-    imagemProduto.src = './assets/img/baton_liquido_eudora.jpg';
+    imagemProduto.src = imagens[i % imagens.length];
 
     let spanOne = document.createElement('span');
     spanOne.className = 'produto-lançamento';
-    spanOne.textContent = `Lançamento`;
+    spanOne.textContent = productLabel[i % productLabel.length];
 
     let spanTwo = document.createElement('span');
-    spanTwo.textContent = `Baton Eudora - Vermelho Especial`;
+    spanTwo.textContent = productName[i % productName.length];
 
     let spanThree = document.createElement('span');
     spanThree.className = 'produto-preço';
-    spanThree.textContent = 'R$ 27,00';
+    spanThree.textContent = productPrice[i % productPrice.length];
 
     let spanFour = document.createElement('span');
     spanFour.className = 'produto-parcela';
-    spanFour.textContent = `2x de R$13,50`
+    spanFour.textContent = `2x de R$13,50`;
 
     let divBotaoComprarAgora = document.createElement('span');
+    divBotaoComprarAgora.id = 'comprar-agora';
     divBotaoComprarAgora.className = 'btn btn-three';
+
+    // função do botão carrinho
+
+    function atualizarCarrinho() {
+
+        let divCarrinhoStyle = document.createElement('div');
+        divCarrinhoStyle.className = 'carrinho-style';
+
+        divCarrinhoStyle.style.backgroundColor = 'black';
+        divCarrinhoStyle.style.color = 'white';
+        divCarrinhoStyle.style.display = 'flex';
+        divCarrinhoStyle.style.flexDirection = 'row';
+        divCarrinhoStyle.style.margin = '7px';
+        divCarrinhoStyle.style.border = 'solid';
+        divCarrinhoStyle.style.borderRadius = '10px';
+        divCarrinhoStyle.alignItems = 'center';
+        divCarrinhoStyle.style.height = '40px';
+        
+
+        let carrinho = document.querySelector("dialog");
+        carrinho.style.position = 'fixed';
+        carrinho.style.top = '30%';
+        carrinho.style.left = '35%';
+
+        let produtoCarrinho = document.createElement("p")
+        produtoCarrinho.textContent = productName[i];
+        //produtoCarrinho.style.margin = '10px'; 
+
+
+        
+        let imagemProdutoCarrinho = document.createElement('img');
+        imagemProdutoCarrinho.src = imagens[i];
+        //imagemProdutoCarrinho.style.width = '100px';
+        //imagemProdutoCarrinho.style.height = '10px';
+
+        let preçoProdutoCarrinho = document.createElement('span');
+        preçoProdutoCarrinho.style.alignItems = 'center';
+        preçoProdutoCarrinho.style.marginLeft = '10px';
+        preçoProdutoCarrinho.textContent = '  ' + '  ' + productPrice[i];
+        
+        divCarrinhoStyle.appendChild(imagemProdutoCarrinho);
+        divCarrinhoStyle.appendChild(produtoCarrinho);
+        
+        divCarrinhoStyle.appendChild(preçoProdutoCarrinho);
+        carrinho.appendChild(divCarrinhoStyle);
+        //console.log(productName[i % productName.length])
+        
+         
+
+    };
+
+    divBotaoComprarAgora.addEventListener("click", function(){
+                atualizarCarrinho();
+    });
 
     let spanBotaoComprarAgora = document.createElement('span');
     spanBotaoComprarAgora.textContent = `COMPRAR AGORA`;
+
+    //
+    //let link = document.getElementById('comprar-agora');
+    //link.addEventListener
+    
+    
+    //
 
     sectionMaisVendidos.appendChild(produtos);
     produtos.appendChild(produtoBlock);
@@ -46,6 +154,7 @@ for (let i = 0; i < 8; i++) {
     produtoBlock.appendChild(spanFour);
     produtoBlock.appendChild(divBotaoComprarAgora);
     divBotaoComprarAgora.appendChild(spanBotaoComprarAgora);
+    //link.appendChild(spanBotaoComprarAgora);
     
 }
 
@@ -101,53 +210,49 @@ rodaPe.appendChild(endereco);
 bodySite.appendChild(rodaPe);
 
 
+//
 
+// Criando carrinho de compras
 
+/*inicializarLoja = () => {
+    var containerProdutos = document.getElementsByClassName('produto-block');
+        productName.map((val)=>{
+            console.log(val)
+            
+        })
+};
 
+inicializarLoja();*/
 
-
-
-
+// 
 
 
 
 
 
 /*
-//Itens do produto
-let imagemProduto = document.createElement('img');
-imagemProduto.src = './assets/img/baton_liquido_eudora.jpg';
+function atualizarCarrinho(){
+    for (let i = 0; i < 8; i++){
 
-let spanOne = document.createElement('span');
-spanOne.className = 'produto-lançamento';
-spanOne.textContent = `Lançamento`;
-
-let spanTwo = document.createElement('span');
-spanTwo.textContent = `Baton Eudora - Vermelho Especial`;
-
-let spanThree = document.createElement('span');
-spanThree.className = 'produto-preço';
-spanThree.textContent = 'R$ 27,00';
-
-let spanFour = document.createElement('span');
-spanFour.className = 'produto-parcela';
-spanFour.textContent = `2x de R$13,50`
-
-let divBotaoComprarAgora = document.createElement('span');
-divBotaoComprarAgora.className = 'btn btn-three';
-
-let spanBotaoComprarAgora = document.createElement('span');
-spanBotaoComprarAgora.textContent = `COMPRAR AGORA`;
+    }
+}
 */
 
-/*
-sectionMaisVendidos.appendChild(produtos);
-produtos.appendChild(produtoBlock);
-produtoBlock.appendChild(imagemProduto);
-produtoBlock.appendChild(spanOne);
-produtoBlock.appendChild(spanTwo);
-produtoBlock.appendChild(spanThree);
-produtoBlock.appendChild(spanFour);
-produtoBlock.appendChild(divBotaoComprarAgora);
-divBotaoComprarAgora.appendChild(spanBotaoComprarAgora)
-*/
+//var comprarAgora = document.getElementsByTagName('a');
+//for ()
+
+//function atualizarCarrinho() {
+ //   console.log(items);
+//}
+
+const botaoModal = document.getElementById("botao-modal");
+const modal = document.querySelector("dialog");
+const buttonClose = document.querySelector("dialog button");
+
+botaoModal.onclick = function(){
+    modal.showModal();
+};
+
+buttonClose.onclick = function () {
+    modal.close()
+}
